@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Recoil/Scenes/Main.unity
+  isLoaded: 0
+  isActive: 0

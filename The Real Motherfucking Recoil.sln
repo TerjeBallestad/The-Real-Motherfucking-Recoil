@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Real Motherfucking Recoil", "The Real Motherfucking Recoil.csproj", "{839A8EE6-6D7D-B520-028C-360B4A34411D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Real Motherfucking Recoil.Editor", "The Real Motherfucking Recoil.Editor.csproj", "{064523CD-587A-03D9-E2A3-9F0D5736160C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{839A8EE6-6D7D-B520-028C-360B4A34411D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{839A8EE6-6D7D-B520-028C-360B4A34411D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{839A8EE6-6D7D-B520-028C-360B4A34411D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{839A8EE6-6D7D-B520-028C-360B4A34411D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{064523CD-587A-03D9-E2A3-9F0D5736160C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{064523CD-587A-03D9-E2A3-9F0D5736160C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{064523CD-587A-03D9-E2A3-9F0D5736160C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{064523CD-587A-03D9-E2A3-9F0D5736160C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
