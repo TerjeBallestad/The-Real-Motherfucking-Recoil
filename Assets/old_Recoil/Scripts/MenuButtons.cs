@@ -18,7 +18,7 @@ public class MenuButtons : MonoBehaviour {
 
     public void Start()
     {
-        optionsOverlay = GameObject.Find("OptionsMenuMaster");
+       // optionsOverlay = GameObject.Find("OptionsMenuMaster");
         optionsOverlay.SetActive(false);
     }
 

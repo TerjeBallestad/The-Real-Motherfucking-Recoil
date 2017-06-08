@@ -6,7 +6,7 @@ using MoreMountains.CorgiEngine;
 public class BunnyHandgun : ProjectileWeapon {
 
     public float recoilForce;
-    private Vector3 _direction;
+    private Vector3 _recoilDirection;
     private CharacterRecoil _characterRecoil;
 
     public override void Initialize()
@@ -15,10 +15,11 @@ public class BunnyHandgun : ProjectileWeapon {
         _characterRecoil = Owner.GetComponent<CharacterRecoil>();
     }
 
-    public void GetDirection()
+    public void GetRecoilDirection()
     {
-        _direction = (transform.right * (Flipped ? 1 : -1) * recoilForce);
+		_recoilDirection = (transform.right * (Flipped ? 1 : -1) * recoilForce);
     }
+		
 
     /// <summary>
     /// Called everytime the weapon is used
@@ -27,9 +28,9 @@ public class BunnyHandgun : ProjectileWeapon {
     {
         base.WeaponUse();
 
-        GetDirection();
+        GetRecoilDirection();
         
-        _characterRecoil.AddRecoil(new Vector2(_direction.x, _direction.y));
+        _characterRecoil.AddRecoil(new Vector2(_recoilDirection.x, _recoilDirection.y), 10);
         DetermineSpawnPosition();
 
         /*_spawnPosition = this.transform.localPosition + this.transform.localRotation * ProjectileSpawnOffset;

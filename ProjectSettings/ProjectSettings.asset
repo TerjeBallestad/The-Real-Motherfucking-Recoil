@@ -663,7 +663,7 @@ PlayerSettings:
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
     Analytics: 0
-    Build: 1
+    Build: 0
     Collab: 1
     ErrorHub: 0
     Game_Performance: 0
@@ -673,8 +673,8 @@ PlayerSettings:
     Unity_Ads: 0
   facebookSdkVersion: 7.9.1
   apiCompatibilityLevel: 2
-  cloudProjectId: 9ccead5a-5727-4a52-a935-1de94ded2e55
-  projectName: The Real Motherfucking Recoil
+  cloudProjectId: 0cbc3ebe-5d6c-4712-9834-f5174057c318
+  projectName: CorgiEngine
   organizationId: magnaburger
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
