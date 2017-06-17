@@ -15,15 +15,15 @@ GameObject:
   - component: {fileID: 11469900}
   - component: {fileID: 11494318}
   - component: {fileID: 11485350}
-  - component: {fileID: 11455042}
   - component: {fileID: 11431242}
   - component: {fileID: 11453748}
   - component: {fileID: 11455680}
   - component: {fileID: 114000012565017190}
   - component: {fileID: 114000010795265024}
-  - component: {fileID: 114000011356687900}
   - component: {fileID: 114275130088426874}
   - component: {fileID: 114656635226899734}
+  - component: {fileID: 114043126015957188}
+  - component: {fileID: 114595424781542018}
   m_Layer: 9
   m_Name: Bunny
   m_TagString: Player
@@ -145,25 +145,6 @@ MonoBehaviour:
   AbilityInProgressSfx: {fileID: 0}
   AbilityStopSfx: {fileID: 0}
   AbilityPermitted: 1
---- !u!114 &11455042
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 119040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e24d0eb5fa7640038713564930581a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartSfx: {fileID: 0}
-  AbilityInProgressSfx: {fileID: 0}
-  AbilityStopSfx: {fileID: 0}
-  AbilityPermitted: 1
-  WalkSpeed: 6
-  TouchTheGroundEffect: {fileID: 19800000, guid: 99008e88ac04f1a45997d51439bcf4d1,
-    type: 2}
-  TouchTheGroundSfx: {fileID: 0}
 --- !u!114 &11455680
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -381,30 +362,6 @@ MonoBehaviour:
     type: 2}
   WeaponAttachment: {fileID: 4481336268043882}
   CanPickupWeapons: 1
---- !u!114 &114000011356687900
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 119040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9716d97790a0a49889284ee813194576, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CurrentHealth: 0
-  Invulnerable: 0
-  InitialHealth: 100
-  MaximumHealth: 100
-  DamageEffect: {fileID: 100000, guid: 65c210b4af5c9d544814a1bb717df020, type: 2}
-  DamageSfx: {fileID: 8300000, guid: 4709e6d9e03392b4a9d72a8bc19efb69, type: 3}
-  FlickerSpriteOnHit: 1
-  DeathEffect: {fileID: 0}
-  CollisionsOffOnDeath: 0
-  DeathForce: {x: 0, y: 0}
-  PointsWhenDestroyed: 0
-  VibrateOnDeath: 1
-  RespawnAtInitialLocation: 0
 --- !u!114 &114000012565017190
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -420,6 +377,31 @@ MonoBehaviour:
   AbilityInProgressSfx: {fileID: 0}
   AbilityStopSfx: {fileID: 0}
   AbilityPermitted: 1
+--- !u!114 &114043126015957188
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07f58345fbfe8554c8fbe9d55f1a14a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentHealth: 0
+  Invulnerable: 0
+  InitialHealth: 100
+  MaximumHealth: 100
+  DamageEffect: {fileID: 100000, guid: 65c210b4af5c9d544814a1bb717df020, type: 2}
+  DamageSfx: {fileID: 8300000, guid: aebdc375c35899342b859cf330ff73de, type: 3}
+  FlickerSpriteOnHit: 1
+  DeathEffect: {fileID: 0}
+  CollisionsOffOnDeath: 1
+  DeathForce: {x: 0, y: 10}
+  PointsWhenDestroyed: 0
+  VibrateOnDeath: 1
+  RespawnAtInitialLocation: 0
+  killsWhenDestroyed: 0
 --- !u!114 &114275130088426874
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -436,6 +418,24 @@ MonoBehaviour:
   ParentIncrement: 1
   ApplyNewOrderToChildren: 1
   ChildrenIncrement: 1
+--- !u!114 &114595424781542018
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fab8ac2931d614916a6b9c91d03876c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartSfx: {fileID: 0}
+  AbilityInProgressSfx: {fileID: 0}
+  AbilityStopSfx: {fileID: 0}
+  AbilityPermitted: 1
+  WalkSpeed: 6
+  TouchTheGroundEffect: {fileID: 0}
+  TouchTheGroundSfx: {fileID: 0}
 --- !u!114 &114656635226899734
 MonoBehaviour:
   m_ObjectHideFlags: 1

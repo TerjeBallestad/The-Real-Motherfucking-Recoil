@@ -1,24 +1,24 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Recoil/Scripts/BunnyHandgun.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Recoil/Scripts/RecoilWeaponAmmo.cs">
     <Files>
-      <File FileName="Assets/Recoil/Scripts/CharacterHandleRecoilWeapon.cs" Line="8" Column="2" />
-      <File FileName="Assets/CorgiEngine/Common/Scripts/Agents/CharacterAbilities/CharacterHandleWeapon.cs" Line="125" Column="33" />
-      <File FileName="Assets/CorgiEngine/Common/Scripts/Agents/Weapons/Weapon.cs" Line="236" Column="3" />
-      <File FileName="Assets/Recoil/Scripts/BunnyHandgun.cs" Line="33" Column="91" />
-      <File FileName="Assets/old_Recoil/Scripts/Shooting.cs" Line="21" Column="4" />
-      <File FileName="Assets/Recoil/Scripts/CharacterRecoil.cs" Line="30" Column="28" />
-      <File FileName="Assets/CorgiEngine/Common/Scripts/Agents/CharacterAbilities/CharacterJetpack.cs" Line="12" Column="50" />
-      <File FileName="Assets/CorgiEngine/Common/Scripts/Agents/CharacterAbilities/CharacterAbility.cs" Line="28" Column="28" />
-      <File FileName="Assets/CorgiEngine/Common/Scripts/Agents/Core/CharacterStates.cs" Line="26" Column="3" />
-      <File FileName="Assets/CorgiEngine/MMTools/StateMachine/MMStateMachine.cs" Line="44" Column="2" />
-      <File FileName="Assets/CorgiEngine/Common/Scripts/Agents/Weapons/ProjectileWeapon.cs" Line="1" Column="1" />
-      <File FileName="Assets/CorgiEngine/Common/Scripts/Agents/Weapons/WeaponAmmo.cs" Line="1" Column="1" />
-      <File FileName="Assets/CorgiEngine/Common/Scripts/Agents/Core/Health.cs" Line="316" Column="6" />
-      <File FileName="Assets/CorgiEngine/Common/Scripts/Camera/CameraController.cs" Line="1" Column="1" />
-      <File FileName="Assets/old_Recoil/Scripts/PlayerController.cs" Line="72" Column="43" />
-      <File FileName="Assets/CorgiEngine/Common/Scripts/Agents/CorgiController/CorgiController.cs" Line="22" Column="30" />
-      <File FileName="Assets/CorgiEngine/Common/Scripts/Agents/CorgiController/CorgiControllerState.cs" Line="10" Column="2" />
+      <File FileName="Assets/CorgiEngine/Common/Scripts/Spawn/CheckPoint.cs" Line="13" Column="2" />
+      <File FileName="Assets/Recoil/Scripts/CharacterRecoil.cs" Line="1" Column="1" />
+      <File FileName="Assets/CorgiEngine/Common/Scripts/Agents/CharacterAbilities/CharacterJetpack.cs" Line="74" Column="21" />
+      <File FileName="Assets/CorgiEngine/Common/Scripts/Agents/CharacterAbilities/CharacterAbility.cs" Line="29" Column="3" />
+      <File FileName="Assets/CorgiEngine/Common/Scripts/Agents/CharacterAbilities/CharacterHorizontalMovement.cs" Line="51" Column="103" />
+      <File FileName="Assets/old_Recoil/Scripts/PhysicsObject.cs" Line="1" Column="1" />
+      <File FileName="Assets/CorgiEngine/Common/Scripts/Agents/CorgiController/CorgiController.cs" Line="1" Column="1" />
+      <File FileName="Assets/CorgiEngine/Common/Scripts/Agents/Core/Character.cs" Line="1" Column="1" />
+      <File FileName="Assets/Recoil/Scripts/RecoilCharacterHorizontalMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets/Recoil/Scripts/BunnyHandgun.cs" Line="41" Column="30" />
+      <File FileName="Assets/old_Recoil/Scripts/Recoil.cs" Line="1" Column="1" />
+      <File FileName="Assets/CorgiEngine/MMTools/MMHelpers/MMMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets/old_Recoil/Scripts/PlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets/old_Recoil/Scripts/Shooting.cs" Line="1" Column="1" />
+      <File FileName="Assets/Recoil/Scripts/RecoilCheckpoint.cs" Line="41" Column="28" />
+      <File FileName="Assets/CorgiEngine/Common/Scripts/Managers/InputManager.cs" Line="350" Column="3" />
+      <File FileName="Assets/Recoil/Scripts/RecoilWeaponAmmo.cs" Line="51" Column="43" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

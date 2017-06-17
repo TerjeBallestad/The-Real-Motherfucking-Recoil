@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using MoreMountains.CorgiEngine;
 
 public class MenuButtons : MonoBehaviour {
 
@@ -20,11 +21,17 @@ public class MenuButtons : MonoBehaviour {
     {
        // optionsOverlay = GameObject.Find("OptionsMenuMaster");
         optionsOverlay.SetActive(false);
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+        if (sceneName == "MenuScene")
+        {
+            Cursor.visible = true;
+        }
     }
 
     public void startGame (string startGame)
     {
-        SceneManager.LoadScene("BetaScene");
+        LoadingSceneManager.LoadScene("CutScene");
     }
 
     public void optionsMenu (string optionsMenu)
@@ -49,7 +56,9 @@ public class MenuButtons : MonoBehaviour {
 
     public void SetMusicVolume(float value)
     {
-        AudioManager.instance.SetVolume(value, AudioManager.AudioChannel.Music);
+        //AudioManager.instance.SetVolume(value, AudioManager.AudioChannel.Music);
+        SoundManager.Instance.MusicVolume = value;
+        
     }
 
     public void SetSFXVolume(float value)

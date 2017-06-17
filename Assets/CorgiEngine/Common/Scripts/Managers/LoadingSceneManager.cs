@@ -54,6 +54,7 @@ namespace MoreMountains.CorgiEngine
 			{
 				SceneManager.LoadScene(LoadingScreenSceneName);
 			}
+            Debug.Log("LoadScene working");
 		}
 
 		/// <summary>
@@ -65,7 +66,9 @@ namespace MoreMountains.CorgiEngine
 			if (_sceneToLoad != "")
 			{
 				StartCoroutine(LoadAsynchronously());
+                Debug.Log("Corountine LoadA working");
 			}
+            Debug.Log("Start working");
 		}
 
 		/// <summary>
@@ -113,6 +116,7 @@ namespace MoreMountains.CorgiEngine
 
 			// we switch to the new scene
 			_asyncOperation.allowSceneActivation = true;
+            Debug.Log("IE LoadA Working");
 		}
 
 		/// <summary>
@@ -128,6 +132,8 @@ namespace MoreMountains.CorgiEngine
 			LoadingProgressBar.GetComponent<Image>().fillAmount = 0f;
 			LoadingText.text = _loadingTextValue;
 
+            Debug.Log("LoadingSetup working");
+
 		}
 
 		/// <summary>
@@ -135,11 +141,14 @@ namespace MoreMountains.CorgiEngine
 		/// </summary>
 		protected virtual void LoadingComplete() 
 		{
+
+            //Remove "//" to restore to default
 			LoadingCompleteAnimation.gameObject.SetActive(true);
 			StartCoroutine(MMFade.FadeCanvasGroup(LoadingProgressBar,0.1f,0f));
 			StartCoroutine(MMFade.FadeCanvasGroup(LoadingAnimation,0.1f,0f));
-			StartCoroutine(MMFade.FadeCanvasGroup(LoadingCompleteAnimation,0.1f,1f));
+		    StartCoroutine(MMFade.FadeCanvasGroup(LoadingCompleteAnimation,0.1f,1f));
 
+            Debug.Log("LoadingComplete working");
 		}
 	}
 }

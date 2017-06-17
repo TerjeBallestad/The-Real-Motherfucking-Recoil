@@ -5,38 +5,56 @@ using MoreMountains.CorgiEngine;
 
 public class BunnyHandgun : ProjectileWeapon {
 
-    public float recoilForce;
-    private Vector3 _recoilDirection;
+    public float RecoilForce;
+	public float DampTime;
+	private Vector2 _direction;
+	private Vector2 _recoil;
     private CharacterRecoil _characterRecoil;
+	private RecoilWeaponAmmo _ammoScript;
+	private CorgiController _controller;
 
     public override void Initialize()
     {
         base.Initialize();
         _characterRecoil = Owner.GetComponent<CharacterRecoil>();
+		_ammoScript =  GetComponent<RecoilWeaponAmmo> ();
+		_controller = Owner.GetComponent<CorgiController> ();
     }
 
     public void GetRecoilDirection()
     {
-		_recoilDirection = (transform.right * (Flipped ? 1 : -1) * recoilForce);
+		_direction = (transform.right * (Flipped ? 1 : -1));
     }
 		
-
     /// <summary>
     /// Called everytime the weapon is used
     /// </summary>
     protected override void WeaponUse()
     {
-        base.WeaponUse();
+		if (_ammoScript.CurrentAmmo > 0) {
+			base.WeaponUse ();
 
-        GetRecoilDirection();
+			GetRecoilDirection ();
+
+			_recoil = _direction * RecoilForce;
         
-        _characterRecoil.AddRecoil(new Vector2(_recoilDirection.x, _recoilDirection.y), 10);
-        DetermineSpawnPosition();
+			_characterRecoil.AddRecoil (_recoil, DampTime);
 
-        /*_spawnPosition = this.transform.localPosition + this.transform.localRotation * ProjectileSpawnOffset;
-        _spawnPosition = this.transform.TransformPoint (_spawnPosition);*/
+			if (_controller.State.IsGrounded && _ammoScript.CurrentAmmo == 1) {
+				_ammoScript.StartReloading ();
+			}
 
-        SpawnProjectile(_spawnPosition);
+			DetermineSpawnPosition ();
+
+			/*_spawnPosition = this.transform.localPosition + this.transform.localRotation * ProjectileSpawnOffset;
+       		 _spawnPosition = this.transform.TransformPoint (_spawnPosition);*/
+
+			SpawnProjectile (_spawnPosition);
+
+			_ammoScript.DecreaseAmmoBy (1);
+
+            _ammoScript.updateAmmo(_ammoScript.CurrentAmmo, _ammoScript.MagazineSize);
+		} 
     }
  
 }

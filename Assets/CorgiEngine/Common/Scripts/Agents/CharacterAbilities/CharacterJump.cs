@@ -141,7 +141,7 @@ namespace MoreMountains.CorgiEngine
 			}
 
             // If the user releases the jump button and the character is jumping up and enough time since the initial jump has passed, then we make it stop jumping by applying a force down.
-            if ( (_jumpButtonPressTime!=0) 
+            if ( (_jumpButtonPressTime!=0)
 			    && (Time.time - _jumpButtonPressTime >= JumpMinimumAirTime) 
 			    && (_controller.Speed.y > Mathf.Sqrt(Mathf.Abs(_controller.Parameters.Gravity))) 
 			    && (_jumpButtonReleased)

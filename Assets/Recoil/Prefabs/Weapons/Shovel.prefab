@@ -33,8 +33,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1850021412972678}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -60.26, y: -5.295, z: -0.023861017}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -51,19 +51,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a557e2b93323f4831a62221b200348c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TriggerMode: 1
-  DelayBeforeUse: 0
-  TimeBetweenUses: 1
+  TriggerMode: 0
+  DelayBeforeUse: 2
+  TimeBetweenUses: 2
   WeaponAttachmentOffset: {x: 0, y: 0, z: 0}
   FlipWeaponOnCharacterFlip: 1
   FlipValue: {x: -1, y: 1, z: 1}
   ParticleEffects: []
   IdleAnimationParameter: 
-  StartAnimationParameter: 
-  DelayBeforeUseAnimationParameter: 
+  StartAnimationParameter: MeleeAttacking
+  DelayBeforeUseAnimationParameter: MeleeCharging
   SingleUseAnimationParameter: 
   UseAnimationParameter: 
-  DelayBetweenUsesAnimationParameter: 
+  DelayBetweenUsesAnimationParameter: MeleeCharging
   StopAnimationParameter: 
   ReloadStartAnimationParameter: 
   ReloadAnimationParameter: 
@@ -77,14 +77,14 @@ MonoBehaviour:
   LeftHandHandle: {fileID: 0}
   RightHandHandle: {fileID: 0}
   DamageAreaShape: 0
-  AreaSize: {x: 1, y: 1}
+  AreaSize: {x: 2.63, y: 3.76}
   AreaOffset: {x: 1, y: 0}
-  InitialDelay: 0
-  ActiveDuration: 1
+  InitialDelay: 2
+  ActiveDuration: 2
   TargetLayerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   DamageCaused: 10
-  Knockback: 0
-  KnockbackForce: {x: 10, y: 2}
-  InvincibilityDuration: 0.5
+  Knockback: 1
+  KnockbackForce: {x: 15, y: 15}
+  InvincibilityDuration: 2

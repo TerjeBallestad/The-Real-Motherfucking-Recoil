@@ -12,7 +12,7 @@ public class buttonSounds : MonoBehaviour, IPointerEnterHandler
 	void IPointerEnterHandler.OnPointerEnter(PointerEventData eventData)
     {
         Debug.Log("Mouse Entered");
-        AudioManager.instance.PlaySound(mouseOver, transform.position);
+        //AudioManager.instance.PlaySound(mouseOver, transform.position);
        
     }
 }

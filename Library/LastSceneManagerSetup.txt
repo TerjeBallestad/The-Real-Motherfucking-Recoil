@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Recoil/Scenes/Main.unity
+- path: Assets/Recoil/Scenes/Evil Penguins.unity
   isLoaded: 1
   isActive: 1

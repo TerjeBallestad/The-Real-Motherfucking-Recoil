@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 114125382995797644}
   - component: {fileID: 114000011218126282}
   - component: {fileID: 114000013241137692}
-  - component: {fileID: 114025042277251644}
+  - component: {fileID: 114594506997498488}
   m_Layer: 0
   m_Name: Handgun
   m_TagString: Untagged
@@ -210,25 +210,12 @@ MonoBehaviour:
   WeaponRotationSpeed: 0
   MinimumAngle: -180
   MaximumAngle: 180
-  Reticle: {fileID: 1994549866249900, guid: 1c9a9bc4b49ab3d439db0a5e1ad6192d, type: 2}
+  Reticle: {fileID: 1000010525066036, guid: 3624d3c105426dd418a200e1b8385e3f, type: 2}
   DisplayReticle: 1
-  ReticleDistance: 4
+  ReticleDistance: 0
   ReticleAtMousePosition: 1
   RotateReticle: 0
   ReplaceMousePointer: 1
---- !u!114 &114025042277251644
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010407495960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d708b09d7c685aa4596060c0c90f2d57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Reloadable: 1
-  MagazineSize: 0
 --- !u!114 &114125382995797644
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -242,7 +229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TriggerMode: 1
   DelayBeforeUse: 0
-  TimeBetweenUses: 0.2
+  TimeBetweenUses: 0.3
   WeaponAttachmentOffset: {x: 0.05, y: 0, z: 0}
   FlipWeaponOnCharacterFlip: 1
   FlipValue: {x: -1, y: 1, z: 1}
@@ -263,13 +250,14 @@ MonoBehaviour:
   WeaponAngleAnimationParameter: 
   WeaponAngleRelativeAnimationParameter: 
   WeaponStartSfx: {fileID: 0}
-  WeaponUsedSfx: {fileID: 0}
+  WeaponUsedSfx: {fileID: 8300000, guid: 06cb58971cabfca489014ed480c96510, type: 3}
   WeaponStopSfx: {fileID: 0}
   WeaponReloadSfx: {fileID: 0}
   LeftHandHandle: {fileID: 0}
   RightHandHandle: {fileID: 0}
   ProjectileSpawnOffset: {x: 0.7, y: 0, z: 0}
-  recoilForce: 1
+  RecoilForce: 20
+  DampTime: 3
 --- !u!114 &114352417703477766
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -286,6 +274,24 @@ MonoBehaviour:
   ParentIncrement: 1
   ApplyNewOrderToChildren: 0
   ChildrenIncrement: 0
+--- !u!114 &114594506997498488
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010407495960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b313a70e85704aafb6990c11d6fe537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Reloadable: 1
+  MagazineSize: 6
+  ReloadTime: 1.5
+  ReloadStartSFX: {fileID: 8300000, guid: af11b237e36d97046b8a72c13bf11321, type: 3}
+  ReloadFinishedSFX: {fileID: 8300000, guid: 3ee89bc81b1de3742a6e825b74d32002, type: 3}
+  skuddTekst: {fileID: 0}
+  skuddShade: {fileID: 0}
 --- !u!198 &198000010515221402
 ParticleSystem:
   m_ObjectHideFlags: 1

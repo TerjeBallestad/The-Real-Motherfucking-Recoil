@@ -230,7 +230,7 @@ MonoBehaviour:
     m_Bits: 8960
   DamageCaused: 20
   DamageCausedKnockbackType: 1
-  DamageCausedKnockbackForce: {x: 10, y: 10}
+  DamageCausedKnockbackForce: {x: 5, y: 5}
   InvincibilityDuration: 0.5
   DamageTakenEveryTime: 10
   DamageTakenDamageable: 5

@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/CorgiEngine/Common/SplashScreen.unity
     guid: 7b96552fd1198fa4eaae54a2f975645e
   - enabled: 0
-    path: Assets/CorgiEngine/Common/LoadingScreen.unity
-    guid: 0564d059eb6550c49a366517853b04dd
-  - enabled: 0
     path: Assets/CorgiEngine/Common/StartScreen.unity
     guid: b9cf7e391a5874f80a0485164885fe54
   - enabled: 0
@@ -51,5 +48,26 @@ EditorBuildSettings:
     path: Assets/CorgiEngine/Demos/Minimal/FeaturesPlatforms.unity
     guid: 7c52201ab32b101488d1487d7683ccdb
   - enabled: 1
-    path: Assets/Scenes/Main.unity
+    path: Assets/Recoil/Scenes/MenuScene.unity
+    guid: bfbef3da83e81644dbf8ed3f91948c6b
+  - enabled: 1
+    path: Assets/Recoil/Scenes/LoadingScreen.unity
+    guid: 0564d059eb6550c49a366517853b04dd
+  - enabled: 1
+    path: Assets/Recoil/Scenes/Cutscene.unity
+    guid: 27843c728298443bd869297d19d418ad
+  - enabled: 0
+    path: Assets/Recoil/Scenes/Main.unity
     guid: 27e57bc8d48c84c9293f075199b32f95
+  - enabled: 1
+    path: Assets/Recoil/Scenes/Frog Forest.unity
+    guid: 0cbe3a673095fb64a9bf5892cbb47efa
+  - enabled: 1
+    path: Assets/Recoil/Scenes/Evil Penguins.unity
+    guid: e4e02578b832acb4581f58062cf08d87
+  - enabled: 1
+    path: Assets/Recoil/Scenes/EndOfDemo.unity
+    guid: 55baa99a4e2667f43a84cffbcc138369
+  - enabled: 0
+    path: 
+    guid: 35b15be5a701c7a4fa566adb8b267484

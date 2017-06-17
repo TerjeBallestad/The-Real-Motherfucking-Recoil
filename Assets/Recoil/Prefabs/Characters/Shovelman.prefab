@@ -11,23 +11,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1945135582685270}
   m_IsPrefabParent: 1
---- !u!1 &1034862040774854
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4858012206620238}
-  - component: {fileID: 61059147422094490}
-  - component: {fileID: 114026236401762930}
-  m_Layer: 0
-  m_Name: Shovel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1945135582685270
 GameObject:
   m_ObjectHideFlags: 0
@@ -63,49 +46,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -56.93, y: -5.68, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 4858012206620238}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4858012206620238
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1034862040774854}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4670216840592220}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61059147422094490
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1034862040774854}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.45827103, y: 0.7745433}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.08345795, y: 2.5490866}
-  m_EdgeRadius: 0
 --- !u!61 &61196643771948798
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -122,14 +66,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.625, y: 5.625}
+    oldSize: {x: 4.5, y: 5.625}
     newSize: {x: 4.625, y: 5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.37, y: 2.05}
+  m_Size: {x: 0.33537537, y: 2.06}
   m_EdgeRadius: 0
 --- !u!95 &95546771834140904
 Animator:
@@ -148,54 +92,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114026236401762930
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1034862040774854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a557e2b93323f4831a62221b200348c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TriggerMode: 1
-  DelayBeforeUse: 0
-  TimeBetweenUses: 1
-  WeaponAttachmentOffset: {x: 0, y: 0, z: 0}
-  FlipWeaponOnCharacterFlip: 1
-  FlipValue: {x: -1, y: 1, z: 1}
-  ParticleEffects: []
-  IdleAnimationParameter: 
-  StartAnimationParameter: 
-  DelayBeforeUseAnimationParameter: 
-  SingleUseAnimationParameter: 
-  UseAnimationParameter: 
-  DelayBetweenUsesAnimationParameter: 
-  StopAnimationParameter: 
-  ReloadStartAnimationParameter: 
-  ReloadAnimationParameter: 
-  ReloadStopAnimationParameter: 
-  WeaponAngleAnimationParameter: 
-  WeaponAngleRelativeAnimationParameter: 
-  WeaponStartSfx: {fileID: 0}
-  WeaponUsedSfx: {fileID: 0}
-  WeaponStopSfx: {fileID: 0}
-  WeaponReloadSfx: {fileID: 0}
-  LeftHandHandle: {fileID: 0}
-  RightHandHandle: {fileID: 0}
-  DamageAreaShape: 0
-  AreaSize: {x: 2.69, y: 3.58}
-  AreaOffset: {x: 1.24, y: 0.78}
-  InitialDelay: 0
-  ActiveDuration: 1
-  TargetLayerMask:
-    serializedVersion: 2
-    m_Bits: 512
-  DamageCaused: 10
-  Knockback: 0
-  KnockbackForce: {x: 10, y: 2}
-  InvincibilityDuration: 0.5
 --- !u!114 &114121582839736064
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -207,7 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9716d97790a0a49889284ee813194576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentHealth: 0
+  CurrentHealth: 100
   Invulnerable: 0
   InitialHealth: 100
   MaximumHealth: 100
@@ -218,10 +114,10 @@ MonoBehaviour:
   DeathEffect: {fileID: 1334405014037102, guid: 204224fd08ec0440a8be60ad98994443,
     type: 2}
   CollisionsOffOnDeath: 1
-  DeathForce: {x: 0, y: 10}
+  DeathForce: {x: 0, y: 0}
   PointsWhenDestroyed: 10
   VibrateOnDeath: 0
-  RespawnAtInitialLocation: 0
+  RespawnAtInitialLocation: 1
 --- !u!114 &114226803032560210
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -257,8 +153,8 @@ MonoBehaviour:
   HoleDetectionOffset: {x: 0, y: 0, z: 0}
   HoleDetectionRaycastLength: 1
   ViewDistance: 10
-  StopDistance: 1
-  MoveOnSightRayOffset: {x: 0, y: -0.5, z: 0}
+  StopDistance: 2
+  MoveOnSightRayOffset: {x: 0, y: -0.62, z: 0}
   MoveOnSightLayer:
     serializedVersion: 2
     m_Bits: 512
@@ -314,7 +210,7 @@ MonoBehaviour:
     DrawRaycastsGizmos: 1
   PlatformMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 1313024
   MovingPlatformMask:
     serializedVersion: 2
     m_Bits: 262144
@@ -325,8 +221,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1048576
   DetachmentMethod: 0
-  NumberOfHorizontalRays: 5
-  NumberOfVerticalRays: 6
+  NumberOfHorizontalRays: 8
+  NumberOfVerticalRays: 3
   RayOffset: 0.05
 --- !u!114 &114359886586719836
 MonoBehaviour:
@@ -378,7 +274,7 @@ MonoBehaviour:
   AbilityPermitted: 1
   InitialWeapon: {fileID: 114031971775225282, guid: b72a5641c872a4c18b66dae78ff452e7,
     type: 2}
-  WeaponAttachment: {fileID: 0}
+  WeaponAttachment: {fileID: 4670216840592220}
   CanPickupWeapons: 0
 --- !u!114 &114678810731112212
 MonoBehaviour:
@@ -409,7 +305,7 @@ SpriteRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: d495202727fc00a49b844e4efcd5d960, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -428,7 +324,7 @@ SpriteRenderer:
   m_SortingLayerID: 1795597123
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 255da609ef3cb40a4935a71a8016a07b, type: 3}
+  m_Sprite: {fileID: 21300002, guid: 8f9f3e14d6ac84bf2991b19e6dc0fce2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

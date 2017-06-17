@@ -19,6 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4572824760547534}
+  - component: {fileID: 114289268538553946}
   m_Layer: 0
   m_Name: BloodExplosionHolder
   m_TagString: Untagged
@@ -36,6 +37,7 @@ GameObject:
   - component: {fileID: 4869287844430422}
   - component: {fileID: 198802557161155724}
   - component: {fileID: 199028120531988988}
+  - component: {fileID: 114412750890278126}
   m_Layer: 0
   m_Name: Bloodfountain
   m_TagString: Untagged
@@ -70,6 +72,31 @@ Transform:
   m_Father: {fileID: 4572824760547534}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114289268538553946
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1334405014037102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1214df72ea161484485936ea29844176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimeToDestruction: 6
+--- !u!114 &114412750890278126
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1515201436470802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74f903e375ff34b1c87c4ebff3cacfb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DestroyParent: 1
+  DestroyDelay: 0
 --- !u!198 &198802557161155724
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -135,7 +162,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 10
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -2426,7 +2453,7 @@ ParticleSystem:
     m_Dampen:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.21
+      scalar: 0.52
       minScalar: 0
       maxCurve:
         serializedVersion: 2
